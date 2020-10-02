@@ -7,6 +7,7 @@ export const createApplicant = celebrate({
     lastName: Joi.string().label('Last Name').required(),
     phoneNumber: Joi.string().label('Phone Number').required(),
     cv: Joi.string().label('Personal CV').required(),
+    comment: Joi.string().label('Comment'),
   }),
 });
 

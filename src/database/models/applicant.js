@@ -30,6 +30,9 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      comment: {
+        type: DataTypes.TEXT,
+      },
       status: {
         type: DataTypes.ENUM('pending', 'invited', 'passed', 'failed'),
         status: 'pending',

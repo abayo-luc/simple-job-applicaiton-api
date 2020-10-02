@@ -34,6 +34,9 @@ module.exports = {
         type: Sequelize.ENUM('pending', 'invited', 'passed', 'failed'),
         defaultValue: 'pending',
       },
+      comment: {
+        type: Sequelize.TEXT,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
