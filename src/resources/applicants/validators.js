@@ -17,6 +17,9 @@ export const changeStatus = celebrate({
       .valid('pending', 'invited', 'passed', 'failed')
       .required(),
   }),
+  params: Joi.object().keys({
+    id: Joi.number().required(),
+  }),
 });
 
 export const getOne = celebrate({
