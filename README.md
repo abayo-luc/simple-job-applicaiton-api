@@ -13,7 +13,7 @@ A step by step series of examples that tell you how to get the development envir
 Clone the repo from github and install dependencies through npm.
 
 ```
-git clone -------
+git clone https://github.com/abayo-luc/simple-job-applicaiton-api.git
 cd save-auth-api
 npm install
 ```
