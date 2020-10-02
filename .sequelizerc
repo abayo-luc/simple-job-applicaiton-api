@@ -6,7 +6,7 @@ const isProduction = process.env.NODE_EN === 'production'
 const databasePath = path.join(__dirname, isProduction ? 'dist': 'src', 'database');
 
 module.exports = {
-    config: path.join(databasePath, 'config', 'config.json'),
+    config: path.join(databasePath, 'config', 'config.js'),
     'models-path': path.join(databasePath, 'models'),
     'seeders-path': path.join(databasePath, 'seeders'),
     'migrations-path': path.join(databasePath, 'migrations')
