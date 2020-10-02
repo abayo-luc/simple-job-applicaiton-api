@@ -3,11 +3,11 @@ const path = require('path');
 
 const isProduction = process.env.NODE_EN === 'production'
 
-const databasePath = path.join(__dirname, isProduction ? 'dist': 'scr', 'database');
+const databasePath = path.join(__dirname, isProduction ? 'dist': 'src', 'database');
 
 module.exports = {
     config: path.join(databasePath, 'config', 'config.json'),
     'models-path': path.join(databasePath, 'models'),
     'seeders-path': path.join(databasePath, 'seeders'),
-    'migration-path': path.join(databasePath, 'migration')
+    'migrations-path': path.join(databasePath, 'migrations')
 }

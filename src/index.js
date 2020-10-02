@@ -1,6 +1,7 @@
 import '@babel/polyfill';
 import express from 'express';
 import resources from './resources';
+import { errors } from 'celebrate';
 const app = express();
 
 app.use(express.json());
@@ -12,5 +13,5 @@ app.use('*', (_, res) =>
     message: 'API endpoint not found!',
   })
 );
-
+app.use(errors());
 export default app;
