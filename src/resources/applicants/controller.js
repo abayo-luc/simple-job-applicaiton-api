@@ -1,10 +1,20 @@
 import asyncHandler from '../../middleware/asyncHandler';
 import { jsonResponse, statusCodes } from '../../utils';
 import RestActions from '../restActions';
-
+import { paginate } from '../../utils';
 const model = 'applicant';
 export const getAll = asyncHandler(async (req, res) => {
-  const data = await RestActions.findAll({ model });
+  const { page = 1, limit = 10 } = req.query;
+  const data = await RestActions.findAll({
+    model,
+    query: {
+      order: [
+        ['firstName', 'ASC'],
+        ['firstName', 'ASC'],
+      ],
+      ...paginate({ page, limit }),
+    },
+  });
   return jsonResponse({
     res,
     status: statusCodes.OK,
