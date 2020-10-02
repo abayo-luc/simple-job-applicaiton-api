@@ -14,7 +14,7 @@ Clone the repo from github and install dependencies through npm.
 
 ```
 git clone https://github.com/abayo-luc/simple-job-applicaiton-api.git
-cd save-auth-api
+cd simple-job-applicaiton-api
 npm install
 ```
 
