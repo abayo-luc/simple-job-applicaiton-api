@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
-    "axios": "^0.20.0",
     "celebrate": "^13.0.3",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -38,7 +37,6 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.4.2",
     "nodemon": "^2.0.4",
-    "supertest": "^5.0.0",
-    "typescript": "^4.0.3"
+    "supertest": "^5.0.0"
   }
 }
